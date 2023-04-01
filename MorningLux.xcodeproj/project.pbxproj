@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66D2154929D57E3E00CD93F1 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2154829D57E3E00CD93F1 /* CameraPreviewView.swift */; };
 		66D24C2729D4040B00F687D2 /* MorningLuxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C2629D4040B00F687D2 /* MorningLuxApp.swift */; };
 		66D24C2929D4040B00F687D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C2829D4040B00F687D2 /* ContentView.swift */; };
 		66D24C2B29D4040C00F687D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D24C2A29D4040C00F687D2 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		66D24C3829D4040C00F687D2 /* MorningLuxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C3729D4040C00F687D2 /* MorningLuxTests.swift */; };
 		66D24C4229D4040C00F687D2 /* MorningLuxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C4129D4040C00F687D2 /* MorningLuxUITests.swift */; };
 		66D24C4429D4040C00F687D2 /* MorningLuxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C4329D4040C00F687D2 /* MorningLuxUITestsLaunchTests.swift */; };
+		66D24C5229D405F500F687D2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C5129D405F500F687D2 /* CameraView.swift */; };
+		66D24C5429D47AD900F687D2 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D24C5329D47AD900F687D2 /* CameraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66D2154829D57E3E00CD93F1 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		66D24C2329D4040B00F687D2 /* MorningLux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MorningLux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D24C2629D4040B00F687D2 /* MorningLuxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningLuxApp.swift; sourceTree = "<group>"; };
 		66D24C2829D4040B00F687D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,9 @@
 		66D24C3D29D4040C00F687D2 /* MorningLuxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MorningLuxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D24C4129D4040C00F687D2 /* MorningLuxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningLuxUITests.swift; sourceTree = "<group>"; };
 		66D24C4329D4040C00F687D2 /* MorningLuxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningLuxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66D24C5029D4053400F687D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		66D24C5129D405F500F687D2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		66D24C5329D47AD900F687D2 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +81,11 @@
 		66D24C1A29D4040B00F687D2 = {
 			isa = PBXGroup;
 			children = (
+				66D24C5129D405F500F687D2 /* CameraView.swift */,
+				66D24C5329D47AD900F687D2 /* CameraController.swift */,
+				66D2154829D57E3E00CD93F1 /* CameraPreviewView.swift */,
+				66D24C2829D4040B00F687D2 /* ContentView.swift */,
+				66D24C2629D4040B00F687D2 /* MorningLuxApp.swift */,
 				66D24C2529D4040B00F687D2 /* MorningLux */,
 				66D24C3629D4040C00F687D2 /* MorningLuxTests */,
 				66D24C4029D4040C00F687D2 /* MorningLuxUITests */,
@@ -94,8 +106,7 @@
 		66D24C2529D4040B00F687D2 /* MorningLux */ = {
 			isa = PBXGroup;
 			children = (
-				66D24C2629D4040B00F687D2 /* MorningLuxApp.swift */,
-				66D24C2829D4040B00F687D2 /* ContentView.swift */,
+				66D24C5029D4053400F687D2 /* Info.plist */,
 				66D24C2A29D4040C00F687D2 /* Assets.xcassets */,
 				66D24C2C29D4040C00F687D2 /* Preview Content */,
 			);
@@ -257,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D24C5229D405F500F687D2 /* CameraView.swift in Sources */,
 				66D24C2929D4040B00F687D2 /* ContentView.swift in Sources */,
+				66D2154929D57E3E00CD93F1 /* CameraPreviewView.swift in Sources */,
+				66D24C5429D47AD900F687D2 /* CameraController.swift in Sources */,
 				66D24C2729D4040B00F687D2 /* MorningLuxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +434,8 @@
 				DEVELOPMENT_TEAM = PH8HB62TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorningLux/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To measure light levels for circadian rhythm optimization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +465,8 @@
 				DEVELOPMENT_TEAM = PH8HB62TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorningLux/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To measure light levels for circadian rhythm optimization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
